@@ -1,0 +1,15 @@
+<div class="vertical-collection-container">
+  <VerticalCollection
+    @items={{this.items}}
+    @key="id"
+    @estimateHeight={{50}}
+    @staticHeight={{true}}
+    @renderAll={{false}}
+    as |item|
+  >
+    <div class="row-container">
+      <div class="row-index">{{item.id}}.</div>
+      <InnerComponent/>
+    </div>
+  </VerticalCollection>
+</div>
